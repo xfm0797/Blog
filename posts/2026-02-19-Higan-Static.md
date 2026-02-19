@@ -3,7 +3,7 @@ title: 一个极简静态博客，日常只需要写/改 posts/ 里的 Markdown�
 date: 2026-02-19
 category: 开源项目
 tags: [标签1, 标签2]
-top: 20000
+top: 1
 ---
 
 # Higan-Static 博客系统
