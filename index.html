@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="description" content="聶.NET - A Geek's Blog">
-    <title>聶.NET | is NKX !</title>
+    <meta name="description" content="XFM - A XFM's Blog">
+    <title>XFM | is Blog !</title>
 
     <link rel="shortcut icon" href="https://img.i8-mc.cn/file/V4PF4kwS.ico">
     <link rel="icon" href="https://img.i8-mc.cn/file/V4PF4kwS.ico">
@@ -292,7 +292,7 @@
             <span class="nav-divider">/</span>
             <a href="#guestbook.md">留言</a>
             <span class="nav-divider">/</span>
-            <a href="https://status.nkx.moe" target="_blank">状态</a>
+            <a href="https://github.com/xfm0797" target="_blank">Github</a>
         </nav>
 
         <div class="mobile-menu-btn" onclick="app.toggleMenu()">
@@ -307,11 +307,11 @@
 
         <div class="social-contact">
             <span class="social-label">与我联系</span>
-            <a href="mailto:nkx080112@gmail.com" class="social-icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tencent://message/?uin=3257085208" class="social-icon-link" title="QQ"><i class="fa-brands fa-qq"></i></a>
-            <a href="https://t.me/MarkNKX" class="social-icon-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://wa.me/7756621259" class="social-icon-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://github.com/3257085208" class="social-icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:blog@xfm.qzz.io" class="social-icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tencent://message/?uin=858335276" class="social-icon-link" title="QQ"><i class="fa-brands fa-qq"></i></a>
+            <a href="https://t.me/lovoup" class="social-icon-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://t.me/lovoupw" class="social-icon-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/xffm0797" class="social-icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
 
         <div class="section-header">近期发布</div>
@@ -431,7 +431,7 @@
         if (!window.Waline) return;
         Waline.init({
             el: '#waline',
-            serverURL: 'https://这里写你的Waline评论区地址/',
+            serverURL: 'https://waline.xfm.qzz.io/',
             path: path,
             dark: 'body[data-theme="dark"]',
             emoji: ['//cdn.jsdelivr.net.i8-mc.cn/npm/@waline/emojis@1.1.0/weibo'],
@@ -713,7 +713,7 @@
         renderStatus() {
             this.hideAll();
             document.getElementById('status-view').classList.remove('hidden');
-            document.title = "我的动态 - 聶.NET";
+            document.title = "我的动态 - XFM";
 
             const c = document.getElementById('status-content');
             c.innerHTML = '';
@@ -730,7 +730,7 @@
                     <img src="${myAvatar}" class="status-avatar">
                     <div class="status-main">
                         <div class="status-header">
-                            <span class="status-name">聶.NET</span>
+                            <span class="status-name">XFM</span>
                             <span class="status-time">${p.date}</span>
                         </div>
                         <div class="status-card markdown-body">${contentHtml}</div>
@@ -746,7 +746,7 @@
             this.hideAll();
             document.getElementById('archive-view').classList.remove('hidden');
             document.getElementById('archive-title').innerText = "归档";
-            document.title = "归档 - 聶.NET";
+            document.title = "归档 - XFM";
             const c = document.getElementById('archive-content');
             c.innerHTML = '';
             const groups = {};
@@ -770,7 +770,7 @@
             this.hideAll();
             document.getElementById('archive-view').classList.remove('hidden');
             document.getElementById('archive-title').innerText = "分类";
-            document.title = "分类 - 聶.NET";
+            document.title = "分类 - XFM";
             const c = document.getElementById('archive-content');
             c.innerHTML = '';
             const cats = {};
@@ -801,7 +801,7 @@
             const currentPost = this.posts.find(p => p.file === f);
             if (currentPost) {
                 const displayTitle = currentPost.title || '动态';
-                document.title = `${displayTitle} - 聶.NET`;
+                document.title = `${displayTitle} - XFM`;
 
                 document.getElementById('article-title').innerText = displayTitle;
                 document.getElementById('article-date').innerText = currentPost.date || '';
@@ -816,7 +816,7 @@
                     return;
                 }
             } else {
-                document.title = "文章加载中 - 聶.NET";
+                document.title = "文章加载中 - XFM";
             }
 
             try {
@@ -826,7 +826,7 @@
 
                 const titleMatch = text.match(/title:\s*(.*?)\r?\n/);
                 if (titleMatch && titleMatch[1]) {
-                    document.title = `${titleMatch[1].trim()} - 聶.NET`;
+                    document.title = `${titleMatch[1].trim()} - XFM`;
                 }
 
                 if (window.loadWaline) window.loadWaline(f);
@@ -836,7 +836,7 @@
 
             } catch(e) {
                 content.innerHTML = "文章不存在";
-                document.title = "404 - 聶.NET";
+                document.title = "404 - XFM";
             }
         },
 
@@ -850,7 +850,7 @@
             if(!h) {
                 this.hideAll();
                 document.getElementById('home-view').classList.remove('hidden');
-                document.title = "聶.NET | is NKX !";
+                document.title = "XFM | is Blog !";
             }
             else if(h==='archive') {
                 this.renderArchive();
