@@ -2,7 +2,7 @@
 title: 一个极简静态博客，日常只需要写/改 posts/ 里的 Markdown，剩下的全部交给 GitHub Actions（actions bot）自动构建。
 date: 2026-02-19
 category: 开源项目
-tags: [标签1, 标签2]
+tags: [静态博客, Higan-Static]
 top: 1
 ---
 
