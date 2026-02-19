@@ -221,8 +221,8 @@ def build_post_page(
     summary = str(post.get("summary") or "")
 
     canonical = site_url.rstrip("/") + canonical_path
-    safe_desc = (summary or "聶.NET - A Geek's Blog").replace('"', "&quot;")
-    page_title = f"{title} - 聶.NET" if title else "聶.NET"
+    safe_desc = (summary or "XFM - A XFM's Blog").replace('"', "&quot;")
+    page_title = f"{title} - XFM" if title else "XFM"
 
     style_block = _extract_inline_style_from_index(ROOT / "index.html")
 
@@ -270,7 +270,7 @@ def build_post_page(
   <a href="/#category" onclick="toggleMenu(true)" class="menu-link"><i class="fa-solid fa-folder-open"></i> 分类</a>
   <a href="/#archive" onclick="toggleMenu(true)" class="menu-link"><i class="fa-solid fa-box-archive"></i> 归档</a>
   <a href="/#guestbook.md" onclick="toggleMenu(true)" class="menu-link"><i class="fa-solid fa-comment-dots"></i> 留言板</a>
-  <a href="https://status.nkx.moe" target="_blank" class="menu-link"><i class="fa-solid fa-server"></i> 站点状态</a>
+  <a href="https://github.com/xfm0797" target="_blank" class="menu-link"><i class="fa-solid fa-server"></i> Github</a>
 </nav>
 
 <div class="container">
@@ -278,7 +278,7 @@ def build_post_page(
     <div class="brand-area">
       <img src="https://img.i8-mc.cn/file/J0NJk8wH.jpeg" class="avatar" alt="avatar" onclick="location.href='/'">
       <div style="display:flex; align-items:center;">
-        <span class="site-title" onclick="location.href='/'">聶.NET</span>
+        <span class="site-title" onclick="location.href='/'">XFM</span>
         <i id="theme-icon" class="fa-solid fa-sun theme-icon" onclick="toggleTheme()"></i>
       </div>
     </div>
@@ -294,7 +294,7 @@ def build_post_page(
       <span class="nav-divider">/</span>
       <a href="/#guestbook.md">留言</a>
       <span class="nav-divider">/</span>
-      <a href="https://status.nkx.moe" target="_blank">状态</a>
+      <a href="https://github.com/xfm0797" target="_blank">Github</a>
     </nav>
 
     <div class="mobile-menu-btn" onclick="toggleMenu()">
@@ -382,7 +382,7 @@ def build_post_page(
     if (!window.Waline) return;
     Waline.init({{
       el: '#waline',
-      serverURL: 'https://waline.nkx.moe/',
+      serverURL: 'https://waline.xfm.qzz.io/',
       path: path,
       dark: 'body[data-theme="dark"]',
       emoji: ['//cdn.jsdelivr.net.i8-mc.cn/npm/@waline/emojis@1.1.0/weibo'],
@@ -452,7 +452,7 @@ def build_post_page(
 
 
 def main() -> None:
-    site_url = os.environ.get("SITE_URL", "https://写你的域名").rstrip("/")
+    site_url = os.environ.get("SITE_URL", "https://xfm0797.github.io/blog").rstrip("/")
 
     if not POSTS_DIR.exists():
         raise SystemExit(f"posts directory not found: {POSTS_DIR}")
