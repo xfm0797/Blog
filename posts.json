@@ -11,7 +11,7 @@
     "word_count": 2045,
     "content": "",
     "summary": "Higan-Static 博客系统 这是一个轻量静态博客系统：你只需要把 Markdown 文章放进 posts/，其余全部由 **GitHub Actions（actions bot）自动构建**完成。 目录结构 你日常只需要改 posts/ 里的 Markdown。p/、posts.json、sitemap.xml 都是自动生成的。 唯一构建方式：Git",
-    "top": 20000,
+    "top": 1,
     "url": "/p/2026-02-19-Higan-Static/"
   },
   {
