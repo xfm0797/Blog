@@ -1,5 +1,19 @@
 [
   {
+    "file": "2026-08-21-xfm-cms-v1.0.0.md",
+    "title": "XFM CMS - 产品展示型小微企业官方网站程序",
+    "date": "2026-08-21",
+    "category": "开源项目",
+    "tags": [
+      "企业网站，官方网站，xfm-cms"
+    ],
+    "word_count": 9308,
+    "content": "",
+    "summary": "XFM CMS - 产品展示型小微企业官方网站 **版本：v1.0.0** | 作者：**XFM** | 作者网站：https://www.lovou.pw | 联系作者：https://t.me/xfm520 一套基于 **PHP 7.4 + SQLite/MySQL** 的轻量级企业官网程序，专为产品展示型小微企业设计。 零外部依赖，**默认使用 SQL",
+    "top": 101,
+    "url": "/p/2026-08-21-xfm-cms-v1.0.0/"
+  },
+  {
     "file": "2026-02-19-NaviHive.md",
     "title": "NaviHive - 现代化个人导航站",
     "date": "2026-02-19",
